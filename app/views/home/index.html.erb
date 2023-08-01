@@ -1,0 +1,10 @@
+
+<% if user_signed_in? %>
+  <h1>Hello there u r logged in successfully!!!! </h1>
+  <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+<% else %>
+<%= link_to "Log in with Azure AD",     
+user_azure_activedirectory_v2_omniauth_authorize_path, method: :post,
+class: "btn btn-outline-primary btn-lg btn-block" %>
+<%= button_to "Sign up", new_user_registration_url %>
+<% end %>
