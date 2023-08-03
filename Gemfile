@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug'
   gem "omniauth-rails_csrf_protection"
   gem 'jwt'
+  gem 'httparty'
 
 
 end
